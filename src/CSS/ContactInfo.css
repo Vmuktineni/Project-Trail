@@ -10,3 +10,13 @@
     margin-right: 10px; /* Adjust the margin as needed */
   }
   
+  @media (max-width: 768px) {
+    .contact-info {
+      flex-direction: column; /* Stack items vertically on mobile */
+      align-items: center;
+    }
+    
+    .contact-icon {
+      margin: 5px 0; /* Adjust spacing between icons */
+    }
+  }
