@@ -1,0 +1,12 @@
+/* ContactInfo.css */
+.contact-info {
+    display: flex;
+    align-items: center;
+  }
+  
+  .contact-icon {
+    text-decoration: none;
+    color: #333; /* Adjust the color as needed */
+    margin-right: 10px; /* Adjust the margin as needed */
+  }
+  
