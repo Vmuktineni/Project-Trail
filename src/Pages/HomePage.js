@@ -1,25 +1,34 @@
-// HomePage.js
 import React from 'react';
-import Header from '../components/Header';
-import Footer from '../components/Footer';
 import { Link } from 'react-router-dom';
+import Carousel from '../components/Carousel'; // Import the Carousel component
 import '../CSS/HomePage.css';
 
 function HomePage() {
+  // Define the content for each slide
+  const slides = [
+    {
+      heading: 'Welcome to Mechazone',
+      description: 'Discover amazing products and services.',
+      buttonText: 'Register/Login',
+      buttonLink: '/signup',
+    },
+    {
+      heading: 'Revolutionize Your Vehicle Experience',
+      description: 'Discover a comprehensive solution for all your automotive needs.',
+      buttonText: 'Learn More',
+      buttonLink: '/about',
+    },
+    {
+      heading: 'Join Mechazone Today',
+      description: 'Sign up now and get started.',
+      buttonText: 'Sign Up',
+      buttonLink: '/signup',
+    },
+  ];
+
   return (
     <div className="home-container">
-      <Header />
-      <div className="content">
-        <div className="center-content">
-          <h1>Welcome to Mechazone</h1>
-          <p>Discover amazing products and services</p>
-          <div className="btn-container">
-            <Link to="/signup" className="orange-button">Register</Link>
-            <Link to="/login" className="red-button">Login</Link>
-          </div>
-        </div>
-      </div>
-      <Footer />
+      <Carousel slides={slides} /> {/* Use the Carousel component */}
     </div>
   );
 }

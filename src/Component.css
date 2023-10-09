@@ -198,3 +198,33 @@ p {
 .terms-label input[type="checkbox"] {
   margin-right: 5px; /* Add some space between the checkbox and text */
 }
+
+@media (max-width: 768px) {
+  .container {
+    width: 100%; /* Full-width container for smaller screens */
+    border-radius: 0; /* Remove border-radius for full width */
+    min-height: auto; /* Adjust min-height for mobile */
+  }
+
+  .signin-container,
+  .signup-container {
+    width: 100%; /* Full-width for smaller screens */
+    position: static; /* Remove position: absolute */
+    height: auto; /* Adjust height for mobile */
+    transform: none; /* Remove transform for full-width */
+    left: 0; /* Reset left position */
+  }
+
+  /* Additional styles for .signin-container.signin and .signup-container.signin */
+  .signin-container.signin,
+  .signup-container.signin {
+    background: #ff4b2b; /* Red background color */
+    color: #ffffff; /* White text color */
+  }
+
+  /* Additional styles for .signup-container.signin */
+  .signup-container.signin {
+    background: #ffffff; /* White background color */
+    color: #333; /* Dark text color */
+  }
+}
