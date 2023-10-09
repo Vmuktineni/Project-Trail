@@ -9,6 +9,9 @@ import Navigation from './Links/Navigation';
 import Header from './components/Header'; // Import your Header component
 import Footer from './components/Footer'; // Import your Footer component
 import './App.css';
+import Dashboard from './components/Dashboard';
+import Cars from './components/Car';
+import Bikes from './components/Bike';
 
 function App() {
   return (
@@ -22,6 +25,9 @@ function App() {
           <Route path="/contact" element={<ContactUs />} />
           <Route path="/signup" element={<SignupPage />} /> {/* Add the SignupPage route */}
           <Route path="/login" element={<LoginPage />} /> {/* Add the LoginPage route */}
+          <Route path ="/dashboard" element={<Dashboard/>}/>
+          <Route path ="/cars" element={<Cars/>}/>
+          <Route path ="/bikes" element={<Bikes/>}/>
         </Routes>
         <Footer /> {/* Include your Footer component */}
       </div>
