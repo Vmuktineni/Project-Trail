@@ -10,7 +10,7 @@ function AboutUs() {
         condimentum. Suspendisse facilisis libero sit amet libero pellentesque, a viverra dui
         sollicitudin.
       </p>
-    </div>
+    </div> 
   );
 }
 
